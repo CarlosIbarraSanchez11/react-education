@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import menu_icon from "../../assets/menu-icon.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+// import { useHistory } from "react-router-dom";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
   };
+
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} alt="" className="logo" />
@@ -61,7 +63,6 @@ const Navbar = () => {
             Contact us
           </Link>
         </li>
-        <button className="btn-login"> Log In</button>
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>

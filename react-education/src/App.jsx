@@ -12,7 +12,7 @@ import TitleCampus from "./components/TitleCampus/TitleCampus";
 import TitleContact from "./components/TitleContact/TitleContact";
 import TitleTestimonials from "./components/TitleTestimonials/TitleTestimonials";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
-
+import { useNavigate } from "react-router-dom";
 const App = () => {
   const [playState, setPlayState] = useState(false);
 
