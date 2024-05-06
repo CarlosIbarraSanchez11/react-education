@@ -61,6 +61,7 @@ const Navbar = () => {
             Contact us
           </Link>
         </li>
+        <button className="btn-login"> Log In</button>
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
